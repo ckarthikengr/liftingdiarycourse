@@ -1,1 +1,26 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
 @AGENTS.md
+
+## Commands
+
+```bash
+npm run dev      # Start development server
+npm run build    # Production build
+npm run start    # Start production server
+npm run lint     # Run ESLint
+```
+
+## Architecture
+
+Next.js 16 app using the App Router with React 19. All source lives under `src/app/`. TypeScript strict mode is on; use the `@/*` path alias for imports from `src/`.
+
+**Styling**: Tailwind CSS 4 — configured via `@theme` directives in `src/app/globals.css` and `@tailwindcss/postcss` in `postcss.config.mjs`. There is no `tailwind.config.js`.
+
+**Fonts**: Geist Sans and Geist Mono loaded via `next/font/google` in `layout.tsx`, exposed as CSS variables `--font-geist-sans` and `--font-geist-mono`.
+
+**Linting**: ESLint 9 flat config (`eslint.config.mjs`) extending `next/core-web-vitals` and `next/typescript`.
+
+**Authentication**: Clerk (`@clerk/nextjs` v7) wraps the app in `ClerkProvider` at `src/app/layout.tsx`. Use the v7 `Show` component (not the older `SignedIn`/`SignedOut`) for conditional rendering based on auth state. `SignInButton`/`SignUpButton` use `mode="modal"`. `UserButton` renders the signed-in user menu. Requires `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` and `CLERK_SECRET_KEY` env vars.
