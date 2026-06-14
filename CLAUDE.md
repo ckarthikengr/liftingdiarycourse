@@ -12,6 +12,8 @@ Before generating any code, ALWAYS read and follow the relevant documentation in
 - `/docs/data-fetching.md` — data fetching rules: Server Components only, Drizzle ORM via `/data` helpers, userId scoping
 - `/docs/data-mutations.md` — data mutation rules: `/data` helpers, Server Actions in colocated `actions.ts`, typed params (no FormData), Zod validation
 - `/docs/auth.md` — authentication standards: Clerk usage, protecting pages, conditional UI, what not to do
+- `/docs/server-components.md` — Server Component standards: awaiting params/searchParams (Next.js 15 Promises), async components, no client APIs
+- `/docs/routing.md` — routing standards: all routes under /dashboard, middleware-based route protection via Clerk
 
 ## Commands
 
