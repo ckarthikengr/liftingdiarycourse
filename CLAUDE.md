@@ -4,6 +4,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 @AGENTS.md
 
+## Coding Standards
+
+Before generating any code, ALWAYS read and follow the relevant documentation in the `/docs` directory. Every piece of code produced must conform to the standards defined there.
+
+- `/docs/ui.md` — UI component and date formatting standards
+
 ## Commands
 
 ```bash
