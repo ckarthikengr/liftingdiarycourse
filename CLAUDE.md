@@ -10,6 +10,8 @@ Before generating any code, ALWAYS read and follow the relevant documentation in
 
 - `/docs/ui.md` — UI component and date formatting standards
 - `/docs/data-fetching.md` — data fetching rules: Server Components only, Drizzle ORM via `/data` helpers, userId scoping
+- `/docs/data-mutations.md` — data mutation rules: `/data` helpers, Server Actions in colocated `actions.ts`, typed params (no FormData), Zod validation
+- `/docs/auth.md` — authentication standards: Clerk usage, protecting pages, conditional UI, what not to do
 
 ## Commands
 
