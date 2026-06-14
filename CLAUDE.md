@@ -9,6 +9,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 Before generating any code, ALWAYS read and follow the relevant documentation in the `/docs` directory. Every piece of code produced must conform to the standards defined there.
 
 - `/docs/ui.md` — UI component and date formatting standards
+- `/docs/data-fetching.md` — data fetching rules: Server Components only, Drizzle ORM via `/data` helpers, userId scoping
 
 ## Commands
 
